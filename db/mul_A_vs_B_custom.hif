@@ -1,0 +1,175 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+7
+3700
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+mul_A_vs_B_custom
+# storage
+db|mul_A_vs_B_custom.(0).cnf
+db|mul_A_vs_B_custom.(0).cnf
+# case_insensitive
+# source_file
+mul_a_vs_b_custom.bdf
+7aca79ccbceb341d1394441d7a5d9aa
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+REG
+# storage
+db|mul_A_vs_B_custom.(2).cnf
+db|mul_A_vs_B_custom.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+reg.vhd
+4e38a89c274509746fcbb8f779db48
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+REG:inst2
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+ADDER
+# storage
+db|mul_A_vs_B_custom.(3).cnf
+db|mul_A_vs_B_custom.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+adder.vhd
+4084d6fbf5c8bcf2bd578b34b2d9c8c2
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+ADDER:inst
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+SHIFT_REG
+# storage
+db|mul_A_vs_B_custom.(4).cnf
+db|mul_A_vs_B_custom.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+shift_reg.vhd
+781247d45a39070f8fdb42f6dbd49f1
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+SHIFT_REG:inst3
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+CONTROL
+# storage
+db|mul_A_vs_B_custom.(1).cnf
+db|mul_A_vs_B_custom.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+control.vhd
+7435d5d2145bea2678b655fdb07fe774
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CONTROL:inst1
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+
