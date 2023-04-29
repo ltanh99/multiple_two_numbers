@@ -1,0 +1,250 @@
+Simulator report for mul_A_vs_B
+Fri Apr 28 23:29:02 2023
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 71 nodes     ;
+; Simulation Coverage         ;      64.56 % ;
+; Total Number of Transitions ; 372          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      64.56 % ;
+; Total nodes checked                                 ; 71           ;
+; Total output ports checked                          ; 79           ;
+; Total output ports with complete 1/0-value coverage ; 51           ;
+; Total output ports with no 1/0-value coverage       ; 10           ;
+; Total output ports with no 1-value coverage         ; 12           ;
+; Total output ports with no 0-value coverage         ; 26           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                      ;
++---------------------------------------+---------------------------------------+------------------+
+; Node Name                             ; Output Port Name                      ; Output Port Type ;
++---------------------------------------+---------------------------------------+------------------+
+; |mul_A_vs_B|REG:inst2|Q[5]            ; |mul_A_vs_B|REG:inst2|Q[5]            ; regout           ;
+; |mul_A_vs_B|REG:inst2|Q[4]            ; |mul_A_vs_B|REG:inst2|Q[4]            ; regout           ;
+; |mul_A_vs_B|REG:inst2|Q[3]            ; |mul_A_vs_B|REG:inst2|Q[3]            ; regout           ;
+; |mul_A_vs_B|REG:inst2|Q[2]            ; |mul_A_vs_B|REG:inst2|Q[2]            ; regout           ;
+; |mul_A_vs_B|REG:inst2|Q[1]            ; |mul_A_vs_B|REG:inst2|Q[1]            ; regout           ;
+; |mul_A_vs_B|ADDER:inst|Add0~1         ; |mul_A_vs_B|ADDER:inst|Add0~1         ; sumout           ;
+; |mul_A_vs_B|ADDER:inst|Add0~1         ; |mul_A_vs_B|ADDER:inst|Add0~2         ; cout             ;
+; |mul_A_vs_B|ADDER:inst|Add0~5         ; |mul_A_vs_B|ADDER:inst|Add0~5         ; sumout           ;
+; |mul_A_vs_B|ADDER:inst|Add0~9         ; |mul_A_vs_B|ADDER:inst|Add0~9         ; sumout           ;
+; |mul_A_vs_B|ADDER:inst|Add0~9         ; |mul_A_vs_B|ADDER:inst|Add0~10        ; cout             ;
+; |mul_A_vs_B|ADDER:inst|Add0~17        ; |mul_A_vs_B|ADDER:inst|Add0~17        ; sumout           ;
+; |mul_A_vs_B|ADDER:inst|Add0~21        ; |mul_A_vs_B|ADDER:inst|Add0~21        ; sumout           ;
+; |mul_A_vs_B|ADDER:inst|Add0~25        ; |mul_A_vs_B|ADDER:inst|Add0~25        ; sumout           ;
+; |mul_A_vs_B|CONTROL:inst1|READY       ; |mul_A_vs_B|CONTROL:inst1|READY       ; regout           ;
+; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh[4]  ; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh[4]  ; regout           ;
+; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh[3]  ; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh[3]  ; regout           ;
+; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh[2]  ; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh[2]  ; regout           ;
+; |mul_A_vs_B|CONTROL:inst1|timer[0]    ; |mul_A_vs_B|CONTROL:inst1|timer[0]    ; regout           ;
+; |mul_A_vs_B|CONTROL:inst1|timer[1]    ; |mul_A_vs_B|CONTROL:inst1|timer[1]    ; regout           ;
+; |mul_A_vs_B|CONTROL:inst1|READY~0     ; |mul_A_vs_B|CONTROL:inst1|READY~0     ; combout          ;
+; |mul_A_vs_B|CONTROL:inst1|READY~1     ; |mul_A_vs_B|CONTROL:inst1|READY~1     ; combout          ;
+; |mul_A_vs_B|CONTROL:inst1|CLR         ; |mul_A_vs_B|CONTROL:inst1|CLR         ; regout           ;
+; |mul_A_vs_B|CONTROL:inst1|ENA1        ; |mul_A_vs_B|CONTROL:inst1|ENA1        ; regout           ;
+; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh~0   ; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh~0   ; combout          ;
+; |mul_A_vs_B|CONTROL:inst1|ENA2        ; |mul_A_vs_B|CONTROL:inst1|ENA2        ; regout           ;
+; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh~1   ; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh~1   ; combout          ;
+; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh~2   ; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh~2   ; combout          ;
+; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh~3   ; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh~3   ; combout          ;
+; |mul_A_vs_B|CONTROL:inst1|timer~0     ; |mul_A_vs_B|CONTROL:inst1|timer~0     ; combout          ;
+; |mul_A_vs_B|CONTROL:inst1|timer~1     ; |mul_A_vs_B|CONTROL:inst1|timer~1     ; combout          ;
+; |mul_A_vs_B|CONTROL:inst1|timer~2     ; |mul_A_vs_B|CONTROL:inst1|timer~2     ; combout          ;
+; |mul_A_vs_B|CONTROL:inst1|timer[2]~3  ; |mul_A_vs_B|CONTROL:inst1|timer[2]~3  ; combout          ;
+; |mul_A_vs_B|CONTROL:inst1|time_ena2   ; |mul_A_vs_B|CONTROL:inst1|time_ena2   ; regout           ;
+; |mul_A_vs_B|CONTROL:inst1|ENA2~0      ; |mul_A_vs_B|CONTROL:inst1|ENA2~0      ; combout          ;
+; |mul_A_vs_B|CONTROL:inst1|time_ena2~0 ; |mul_A_vs_B|CONTROL:inst1|time_ena2~0 ; combout          ;
+; |mul_A_vs_B|READY                     ; |mul_A_vs_B|READY                     ; padio            ;
+; |mul_A_vs_B|Result[10]                ; |mul_A_vs_B|Result[10]                ; padio            ;
+; |mul_A_vs_B|Result[9]                 ; |mul_A_vs_B|Result[9]                 ; padio            ;
+; |mul_A_vs_B|Result[8]                 ; |mul_A_vs_B|Result[8]                 ; padio            ;
+; |mul_A_vs_B|Result[7]                 ; |mul_A_vs_B|Result[7]                 ; padio            ;
+; |mul_A_vs_B|Result[6]                 ; |mul_A_vs_B|Result[6]                 ; padio            ;
+; |mul_A_vs_B|Result[4]                 ; |mul_A_vs_B|Result[4]                 ; padio            ;
+; |mul_A_vs_B|Result[3]                 ; |mul_A_vs_B|Result[3]                 ; padio            ;
+; |mul_A_vs_B|Result[2]                 ; |mul_A_vs_B|Result[2]                 ; padio            ;
+; |mul_A_vs_B|RESET                     ; |mul_A_vs_B|RESET~corein              ; combout          ;
+; |mul_A_vs_B|CLK                       ; |mul_A_vs_B|CLK~corein                ; combout          ;
+; |mul_A_vs_B|D[6]                      ; |mul_A_vs_B|D[6]~corein               ; combout          ;
+; |mul_A_vs_B|D[5]                      ; |mul_A_vs_B|D[5]~corein               ; combout          ;
+; |mul_A_vs_B|D[1]                      ; |mul_A_vs_B|D[1]~corein               ; combout          ;
+; |mul_A_vs_B|CLK~clkctrl               ; |mul_A_vs_B|CLK~clkctrl               ; outclk           ;
+; |mul_A_vs_B|CONTROL:inst1|CLR~clkctrl ; |mul_A_vs_B|CONTROL:inst1|CLR~clkctrl ; outclk           ;
++---------------------------------------+---------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                           ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |mul_A_vs_B|REG:inst2|Q[7]     ; |mul_A_vs_B|REG:inst2|Q[7]     ; regout           ;
+; |mul_A_vs_B|ADDER:inst|Add0~5  ; |mul_A_vs_B|ADDER:inst|Add0~6  ; cout             ;
+; |mul_A_vs_B|ADDER:inst|Add0~13 ; |mul_A_vs_B|ADDER:inst|Add0~13 ; sumout           ;
+; |mul_A_vs_B|ADDER:inst|Add0~29 ; |mul_A_vs_B|ADDER:inst|Add0~30 ; cout             ;
+; |mul_A_vs_B|ADDER:inst|Add0~33 ; |mul_A_vs_B|ADDER:inst|Add0~33 ; sumout           ;
+; |mul_A_vs_B|~GND               ; |mul_A_vs_B|~GND               ; combout          ;
+; |mul_A_vs_B|Result[12]         ; |mul_A_vs_B|Result[12]         ; padio            ;
+; |mul_A_vs_B|D[7]               ; |mul_A_vs_B|D[7]~corein        ; combout          ;
+; |mul_A_vs_B|D[4]               ; |mul_A_vs_B|D[4]~corein        ; combout          ;
+; |mul_A_vs_B|D[3]               ; |mul_A_vs_B|D[3]~corein        ; combout          ;
+; |mul_A_vs_B|D[2]               ; |mul_A_vs_B|D[2]~corein        ; combout          ;
+; |mul_A_vs_B|D[0]               ; |mul_A_vs_B|D[0]~corein        ; combout          ;
++--------------------------------+--------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                       ;
++--------------------------------------+--------------------------------------+------------------+
+; Node Name                            ; Output Port Name                     ; Output Port Type ;
++--------------------------------------+--------------------------------------+------------------+
+; |mul_A_vs_B|REG:inst2|Q[7]           ; |mul_A_vs_B|REG:inst2|Q[7]           ; regout           ;
+; |mul_A_vs_B|REG:inst2|Q[6]           ; |mul_A_vs_B|REG:inst2|Q[6]           ; regout           ;
+; |mul_A_vs_B|REG:inst2|Q[0]           ; |mul_A_vs_B|REG:inst2|Q[0]           ; regout           ;
+; |mul_A_vs_B|ADDER:inst|Add0~5        ; |mul_A_vs_B|ADDER:inst|Add0~6        ; cout             ;
+; |mul_A_vs_B|ADDER:inst|Add0~13       ; |mul_A_vs_B|ADDER:inst|Add0~14       ; cout             ;
+; |mul_A_vs_B|ADDER:inst|Add0~17       ; |mul_A_vs_B|ADDER:inst|Add0~18       ; cout             ;
+; |mul_A_vs_B|ADDER:inst|Add0~21       ; |mul_A_vs_B|ADDER:inst|Add0~22       ; cout             ;
+; |mul_A_vs_B|ADDER:inst|Add0~25       ; |mul_A_vs_B|ADDER:inst|Add0~26       ; cout             ;
+; |mul_A_vs_B|ADDER:inst|Add0~29       ; |mul_A_vs_B|ADDER:inst|Add0~29       ; sumout           ;
+; |mul_A_vs_B|ADDER:inst|Add0~29       ; |mul_A_vs_B|ADDER:inst|Add0~30       ; cout             ;
+; |mul_A_vs_B|ADDER:inst|Add0~33       ; |mul_A_vs_B|ADDER:inst|Add0~33       ; sumout           ;
+; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh[1] ; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh[1] ; regout           ;
+; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh[0] ; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh[0] ; regout           ;
+; |mul_A_vs_B|CONTROL:inst1|time_ready ; |mul_A_vs_B|CONTROL:inst1|time_ready ; regout           ;
+; |mul_A_vs_B|CONTROL:inst1|timer[2]   ; |mul_A_vs_B|CONTROL:inst1|timer[2]   ; regout           ;
+; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh~4  ; |mul_A_vs_B|SHIFT_REG:inst3|rg_sh~4  ; combout          ;
+; |mul_A_vs_B|~GND                     ; |mul_A_vs_B|~GND                     ; combout          ;
+; |mul_A_vs_B|Result[12]               ; |mul_A_vs_B|Result[12]               ; padio            ;
+; |mul_A_vs_B|Result[11]               ; |mul_A_vs_B|Result[11]               ; padio            ;
+; |mul_A_vs_B|Result[5]                ; |mul_A_vs_B|Result[5]                ; padio            ;
+; |mul_A_vs_B|Result[1]                ; |mul_A_vs_B|Result[1]                ; padio            ;
+; |mul_A_vs_B|Result[0]                ; |mul_A_vs_B|Result[0]                ; padio            ;
+; |mul_A_vs_B|D[7]                     ; |mul_A_vs_B|D[7]~corein              ; combout          ;
+; |mul_A_vs_B|D[4]                     ; |mul_A_vs_B|D[4]~corein              ; combout          ;
+; |mul_A_vs_B|D[3]                     ; |mul_A_vs_B|D[3]~corein              ; combout          ;
+; |mul_A_vs_B|D[2]                     ; |mul_A_vs_B|D[2]~corein              ; combout          ;
++--------------------------------------+--------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Apr 28 23:29:02 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off mul_A_vs_B -c mul_A_vs_B
+Info: Using vector source file "E:/Project/Nhúng/mul_A_vs_B/mul_A_vs_B.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      64.56 %
+Info: Number of transitions in simulation is 372
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 160 megabytes
+    Info: Processing ended: Fri Apr 28 23:29:02 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
